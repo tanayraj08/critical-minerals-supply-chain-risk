@@ -1,0 +1,22 @@
+table,subject,mineral,covered,detail
+india_mn_resources_by_state,resources by state,Nickel,False,table does not cover this mineral
+india_mn_resources_by_state,resources by state,Cobalt,False,table does not cover this mineral
+india_mn_resources_by_state,resources by state,Manganese,True,manganese only table
+india_mn_production_by_state,production by state,Nickel,False,table does not cover this mineral
+india_mn_production_by_state,production by state,Cobalt,False,table does not cover this mineral
+india_mn_production_by_state,production by state,Manganese,True,manganese only table
+india_nico_resources,national resources,Nickel,True,1 rows
+india_nico_resources,national resources,Cobalt,True,1 rows
+india_nico_resources,national resources,Manganese,False,no rows for this mineral
+india_nico_imports,import value,Nickel,True,1 rows
+india_nico_imports,import value,Cobalt,True,1 rows
+india_nico_imports,import value,Manganese,False,no rows for this mineral
+india_demand_projection,demand projection,Nickel,True,1 rows
+india_demand_projection,demand projection,Cobalt,True,1 rows
+india_demand_projection,demand projection,Manganese,False,no rows for this mineral
+global_mining_2024,world mine production,Nickel,True,11 rows
+global_mining_2024,world mine production,Cobalt,True,5 rows
+global_mining_2024,world mine production,Manganese,True,5 rows
+global_refining_shares,refining share,Nickel,True,2 of 2 rows carry a numeric share
+global_refining_shares,refining share,Cobalt,True,2 of 2 rows carry a numeric share
+global_refining_shares,refining share,Manganese,False,0 of 1 rows carry a numeric share

@@ -1,0 +1,52 @@
+==============================================================================
+HEADLINE NUMBERS  (every figure traced to the workbook)
+==============================================================================
+
+[1] INDIA MANGANESE RESOURCE BASE  (IBM NMI as on 01.04.2020)
+    States covered                 : 11
+    India total resources          : 503.624 Mt
+     1. Odisha            171.528 Mt    34.06 %
+     2. Karnataka         123.972 Mt    24.62 %
+     3. Madhya Pradesh     60.057 Mt    11.92 %
+     4. Maharashtra        59.036 Mt    11.72 %
+     5. Goa                34.501 Mt     6.85 %
+    Odisha + Karnataka combined    : 58.67 %
+
+[2] INDIA NICKEL AND COBALT RESOURCES  (NMI as on 01.04.2020)
+    Cobalt          45 Mt ore   active mining leases: 0
+    Nickel         189 Mt ore   active mining leases: 0
+
+[3] IMPORT EXPOSURE  (value in US dollars, calendar year basis)
+    Cobalt    US$ 45,000,000  (CY2023)   volume: ~1,000 tonnes
+    Nickel    US$ 1,260,000,000  (CY2024)   volume: Not separately disclosed in source
+    Manganese imports              : NOT IN WORKBOOK (gap)
+
+[4] GLOBAL MINING CONCENTRATION 2024  (named countries only)
+    Nickel    CR3  74.97 %   HHI (lower bound)    3,798   top 3: Indonesia, Philippines, Russia
+    Cobalt    CR3  88.52 %   HHI (lower bound)    5,857   top 3: DR Congo, Indonesia, Russia
+    Manganese CR3  73.00 %   HHI (lower bound)    2,021   top 3: South Africa, Gabon, Australia
+
+[5] PROJECTED INDIAN DEMAND, CAGR 2025 to 2030
+    Cobalt         17 t (2025)  to    3,878 t (2030)   CAGR  196.23 %
+    Nickel      2,629 t (2025)  to   17,492 t (2030)   CAGR   46.09 %
+
+[6] REFINING STAGE  (USGS 2023, partial coverage)
+    Nickel    Indonesia         56 %
+    Nickel    Philippines       6 %
+    Cobalt    China             80 %
+    Cobalt    Congo (Kinshasa)  8 %
+    Manganese China             NO FIGURE: Not in source map - needs separate lookup
+
+[7] STRATEGIC VULNERABILITY SCORE
+    Status: NOT COMPUTED for any mineral.
+    Nickel    INPUTS PRESENT BUT NOT COMPLETE: import_dependence, mining_hhi, refining_leader_share
+    Cobalt    INPUTS PRESENT BUT NOT COMPLETE: import_dependence, mining_hhi, refining_leader_share
+    Manganese INPUTS ABSENT: import_dependence, refining_leader_share
+
+[8] RESOURCE BASE AGAINST FY2021-22 PRODUCTION
+    States producing in FY2021-22  : 7 of 11
+    Goa             no_production_row
+    Jharkhand       zero_production
+    Gujarat         no_production_row
+    West Bengal     no_production_row
+==============================================================================

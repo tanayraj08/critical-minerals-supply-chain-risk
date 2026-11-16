@@ -1,0 +1,6 @@
+mineral_key,country_key,mineral,country,refining_share_pct,is_numeric,refining_share_raw,coverage
+1,8,Nickel,Indonesia,56.0,1,56,"partial, source lists only countries above 5 percent of world processing"
+1,10,Nickel,Philippines,6.0,1,6,"partial, source lists only countries above 5 percent of world processing"
+2,4,Cobalt,China,80.0,1,80,"partial, source lists only countries above 5 percent of world processing"
+2,5,Cobalt,Congo (Kinshasa),8.0,1,8,"partial, source lists only countries above 5 percent of world processing"
+3,4,Manganese,China,,0,Not in source map - needs separate lookup,"missing, no figure in the source map"

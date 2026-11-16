@@ -1,0 +1,4 @@
+mineral,cr3_named_pct,cr3_pct_workbook,cr3_difference_pp,hhi_named_lower_bound,hhi_workbook,hhi_difference,reason_for_difference
+Nickel,74.97,77.4281805745554,-2.46,3798.0,3865.32175813729,-67.0,"workbook counts the Other bucket as one country in both metrics, this analysis excludes it from the numerator and from every HHI term"
+Cobalt,88.52,97.0,-8.48,5857.0,5989.12960760999,-132.0,"workbook counts the Other bucket as one country in both metrics, this analysis excludes it from the numerator and from every HHI term"
+Manganese,73.0,86.0,-13.0,2021.0,2750.0,-729.0,"workbook counts the Other bucket as one country in both metrics, this analysis excludes it from the numerator and from every HHI term"

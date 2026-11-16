@@ -1,0 +1,25 @@
+state_key,state,fiscal_year,production_t,value_rs_thousand,is_latest_year
+1,Andhra Pradesh,2019-20,330530,1059109,False
+4,Jharkhand,2019-20,4785,36126,False
+5,Karnataka,2019-20,336745,2194098,False
+6,Madhya Pradesh,2019-20,962576,6220812,False
+7,Maharashtra,2019-20,720518,6096443,False
+8,Odisha,2019-20,537325,3161505,False
+9,Rajasthan,2019-20,9937,29811,False
+10,Telangana,2019-20,7770,51196,False
+1,Andhra Pradesh,2020-21,250255,848621,False
+4,Jharkhand,2020-21,0,0,False
+5,Karnataka,2020-21,371045,2359787,False
+6,Madhya Pradesh,2020-21,934548,5684482,False
+7,Maharashtra,2020-21,646513,6485961,False
+8,Odisha,2020-21,482915,1948077,False
+9,Rajasthan,2020-21,6940,20820,False
+10,Telangana,2020-21,11097,67713,False
+1,Andhra Pradesh,2021-22,204002,1141924,True
+4,Jharkhand,2021-22,0,0,True
+5,Karnataka,2021-22,380004,3311881,True
+6,Madhya Pradesh,2021-22,849221,6831964,True
+7,Maharashtra,2021-22,731730,8445151,True
+8,Odisha,2021-22,512591,2421292,True
+9,Rajasthan,2021-22,8008,25626,True
+10,Telangana,2021-22,10435,62701,True

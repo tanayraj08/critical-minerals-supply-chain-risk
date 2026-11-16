@@ -1,0 +1,12 @@
+resource_rank,state,reserves_kt,remaining_resources_kt,total_resources_kt,total_resources_mt,share_of_india_pct,cumulative_share_pct,workbook_share_pct,states_sum_kt,workbook_india_total_kt,total_reconciliation
+1,Odisha,11469,160058,171528,171.528,34.06,34.06,34.06,503624,503624,match
+2,Karnataka,15464,108508,123972,123.972,24.62,58.67,24.62,503624,503624,match
+3,Madhya Pradesh,19558,40499,60057,60.057,11.92,70.6,11.92,503624,503624,match
+4,Maharashtra,17733,41303,59036,59.036,11.72,82.32,11.72,503624,503624,match
+5,Goa,65,34436,34501,34.501,6.85,89.17,6.85,503624,503624,match
+6,Andhra Pradesh,8088,21756,29844,29.844,5.93,95.1,5.93,503624,503624,match
+7,Jharkhand,1059,13690,14749,14.749,2.93,98.03,2.93,503624,503624,match
+8,Telangana,342,4162,4503,4.503,0.89,98.92,0.89,503624,503624,match
+9,Gujarat,695,2180,2875,2.875,0.57,99.49,0.57,503624,503624,match
+10,Rajasthan,568,1790,2359,2.359,0.47,99.96,0.47,503624,503624,match
+11,West Bengal,0,200,200,0.2,0.04,100.0,0.04,503624,503624,match

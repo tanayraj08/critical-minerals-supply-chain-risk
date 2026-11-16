@@ -1,0 +1,4 @@
+mineral_key,mineral,year,currency,import_value_usd,import_value_usd_million,import_dependence_pct,import_volume_note,dependence_basis,value_label,period_label,source
+1,Nickel,2024,USD,1260000000,1260.0,100.0,Not separately disclosed in source,"PROXY from zero active mining leases, not customs volume",US$1.26B,CY2024,UN COMTRADE / Trading Economics
+2,Cobalt,2023,USD,45000000,45.0,100.0,"~1,000 tonnes","PROXY from zero active mining leases, not customs volume",US$45M,CY2023,IndexBox trade analysis
+3,Manganese,,,,,,NOT IN WORKBOOK,DATA GAP: no manganese import table in the source,no data,n/a,n/a

@@ -1,0 +1,12 @@
+state,total_resources_mt,total_resources_t,production_2019_20_t,production_2020_21_t,production_2021_22_t,production_status,resource_t_per_t_production,ratio_note
+Telangana,4.503,4503000.0,7770.0,11097.0,10435.0,producing,431.5,ratio computed from FY2021-22 production
+Odisha,171.528,171528000.0,537325.0,482915.0,512591.0,producing,334.6,ratio computed from FY2021-22 production
+Karnataka,123.972,123972000.0,336745.0,371045.0,380004.0,producing,326.2,ratio computed from FY2021-22 production
+Rajasthan,2.359,2359000.0,9937.0,6940.0,8008.0,producing,294.6,ratio computed from FY2021-22 production
+Andhra Pradesh,29.844,29844000.0,330530.0,250255.0,204002.0,producing,146.3,ratio computed from FY2021-22 production
+Maharashtra,59.036,59036000.0,720518.0,646513.0,731730.0,producing,80.7,ratio computed from FY2021-22 production
+Madhya Pradesh,60.057,60057000.0,962576.0,934548.0,849221.0,producing,70.7,ratio computed from FY2021-22 production
+Goa,34.501,34501000.0,,,,no_production_row,,"resources held but no production row in the workbook for any year, ratio not defined"
+Jharkhand,14.749,14749000.0,4785.0,0.0,0.0,zero_production,,"in the production table but reported 0 t in FY2021-22, ratio not defined"
+Gujarat,2.875,2875000.0,,,,no_production_row,,"resources held but no production row in the workbook for any year, ratio not defined"
+West Bengal,0.2,200000.0,,,,no_production_row,,"resources held but no production row in the workbook for any year, ratio not defined"

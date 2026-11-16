@@ -1,0 +1,4 @@
+mineral,cr3_named_pct_python,hhi_named_lower_bound_python,cr3_named_pct_sql,hhi_named_lower_bound_sql,cr3_agrees,hhi_agrees
+Nickel,74.97,3798.0,74.97,3798.0,True,True
+Cobalt,88.52,5857.0,88.52,5857.0,True,True
+Manganese,73.0,2021.0,73.0,2021.0,True,True

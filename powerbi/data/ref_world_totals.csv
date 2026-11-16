@@ -1,0 +1,4 @@
+mineral,mineral_key,world_production_t,other_bucket_t,named_total_t,other_share_of_world_pct,grain_note
+Nickel,1,3655000.0,300000.0,3355000.0,8.21,"aggregate rows, held apart from fact_world_mining so a country visual cannot double count the world"
+Cobalt,2,290000.0,33300.0,256700.0,11.48,"aggregate rows, held apart from fact_world_mining so a country visual cannot double count the world"
+Manganese,3,20000000.0,5400000.0,14600000.0,27.0,"aggregate rows, held apart from fact_world_mining so a country visual cannot double count the world"
