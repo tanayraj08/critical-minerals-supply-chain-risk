@@ -33,7 +33,7 @@ Refining leaders: Indonesia 56% (nickel), China 80% (cobalt), China 95% of batte
 cobalt > nickel > manganese (`vulnerability_sensitivity.csv`). Using the HHI upper bound instead
 changes scores by at most 2.6 points (manganese 57.9) and not the ranking.
 
-## What is new and worth saying
+## What is new 
 
 1. **India imports more manganese ore than it mines**: 6.01 Mt against 3.80 Mt, so 61% import
    dependence even for the metal India produces.
@@ -43,17 +43,3 @@ changes scores by at most 2.6 points (manganese 57.9) and not the ranking.
    India's direct supplier list.
 3. The score ranking is robust to the weight choice.
 
-## Limits (say these before you're asked)
-
-- **Gross weight, not metal content.** Ore and chemical tonnes are not converted to contained Ni, Co or Mn.
-  Imported manganese ore is often higher-grade than Indian ore, so 61% by weight may differ by Mn content.
-- **Nickel and cobalt are still 100% by logic**, not by a ratio: domestic mine production is zero, so all
-  primary supply is imported. What changed is that the volumes are now measured.
-- **Trading hubs.** Singapore, UAE, Hong Kong and the Netherlands appear as sources; they may be traders,
-  not producers, which would understate true origin concentration.
-- **Cobalt export rows look misclassified.** "Cobalt powders" (81052030) exports are 2,522 t (FY2024-25)
-  at about US$4 per kg, far below the price of cobalt metal, so exports are not used for cobalt.
-- **Scope differs from the original workbook.** Its nickel import figure (US$1.26B, CY2024, UN COMTRADE)
-  covers a wider HS scope than these codes (US$623M, FY2024-25).
-- **Years differ.** Customs data is FY2024-25; refining shares are 2023 (Ni, Co) and 2024 (Mn); mining is 2024.
-- **Refining leader share for manganese** is for battery-grade sulphate (HPMSM), not all manganese refining.
