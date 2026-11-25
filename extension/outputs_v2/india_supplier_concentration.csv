@@ -1,0 +1,7 @@
+mineral,year,basis,supplier_countries,import_usd_million,top1,top1_share_pct,top3,cr3_pct,supplier_hhi
+Cobalt,FY2024-25,"import value, all HS codes for the mineral",22,95.35,CHINA P RP,25.28,"CHINA P RP, U S A, U K",61.6,1687.0
+Cobalt,FY2025-26,"import value, all HS codes for the mineral",25,121.42,CHINA P RP,30.74,"CHINA P RP, BELGIUM, U S A",58.77,1589.0
+Manganese,FY2024-25,"import value, all HS codes for the mineral",26,1182.55,SOUTH AFRICA,36.77,"SOUTH AFRICA, GABON, U ARAB EMTS",65.55,2000.0
+Manganese,FY2025-26,"import value, all HS codes for the mineral",25,1184.99,SOUTH AFRICA,37.26,"SOUTH AFRICA, GABON, U ARAB EMTS",70.47,2243.0
+Nickel,FY2024-25,"import value, all HS codes for the mineral",30,622.99,CHINA P RP,20.33,"CHINA P RP, JAPAN, NORWAY",52.29,1215.0
+Nickel,FY2025-26,"import value, all HS codes for the mineral",30,638.51,CHINA P RP,22.1,"CHINA P RP, JAPAN, NORWAY",50.9,1188.0

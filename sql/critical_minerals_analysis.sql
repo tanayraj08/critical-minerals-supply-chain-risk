@@ -104,8 +104,10 @@ ORDER BY n.mineral, production_rank;
 --
 -- It is NOT computed as imported volume divided by apparent consumption, because
 -- the workbook carries no customs volume series for nickel and only an
--- approximate volume note for cobalt. The import VALUES below are the audited
--- figures and are labelled with currency and calendar year.
+-- approximate volume note for cobalt. The import VALUES below are indicative,
+-- order-of-magnitude figures (the source sheet says they are not customs-audited)
+-- and are labelled with currency and calendar year. extension/ replaces this
+-- proxy with DGCIS customs volumes.
 --
 -- Manganese is carried as an explicit gap row. The workbook has no manganese
 -- import table, so no manganese dependence figure is produced here.

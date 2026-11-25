@@ -320,7 +320,7 @@ def main():
         import pypdf
 
         for name, pages in [
-            ("Critical_Minerals_PowerBI_Report.pdf", 6),
+            ("Critical_Minerals_Report_Mockup.pdf", 6),
             ("Critical_Minerals_Dashboard.pdf", None),
         ]:
             path = os.path.join(HERE, "docs", name)

@@ -52,14 +52,18 @@ nothing in FY2021-22. Goa, Gujarat and West Bengal have no production row in the
 at all, and Jharkhand reported zero after producing 4,785 t in 2019-20. Domestic
 concentration risk is a real exposure even where import dependence is not.
 
-**The source workbook's own concentration figures are wrong, and the pipeline reports
-it.** The workbook appends a calculated CR3 and HHI block below its country data. That
+**My first-pass dataset's concentration figures were wrong, and the pipeline reports
+it.** The workbook I assembled appends a calculated CR3 and HHI block below its country data. That
 formula ranks the Other bucket as if it were a country, which produces a cobalt CR3 of 97
 percent by placing an aggregate of unnamed producers second, above Indonesia. The
 recomputed figure is 88.52 percent. The block is loaded into its own table and the
 difference is reported per mineral rather than being quietly replaced.
 
-**The vulnerability score is not computed, and that is the finding.** See Methodology.
+**The vulnerability score is computed only once the inputs are measured.** The core
+pipeline gates it because its import dependence is a proxy. The `extension/` folder adds
+DGCIS customs data and computes it: cobalt 80.5, nickel 67.3, manganese 55.3, a ranking
+that holds under every plus or minus 10 point weight change. India imports 61 percent of
+the manganese ore it uses. See [Extension](#extension-measured-import-dependence-and-the-vulnerability-score).
 
 ---
 
@@ -357,7 +361,7 @@ The 2028 and 2029 values are not in the source, so the demand chart steps from 2
 2030 rather than interpolating a line through years that do not exist. There is no
 manganese demand projection in the workbook, so none is shown anywhere.
 
-### Strategic Vulnerability Score: designed, not computed
+### Strategic Vulnerability Score: gated in the core pipeline, computed in the extension
 
 The intended composite is:
 
@@ -397,21 +401,56 @@ measurement. A reader seeing `Cobalt: 79.2` would reasonably take it as measured
 nothing in the number itself would warn them that two of its three components are
 estimates of different quality. The framework, the weights and the normalised inputs are
 all published so the score can be computed the moment real customs data and a complete
-refining country list are added. The empty score column is the honest output.
+refining country list are added. The empty score column is the honest output of the core
+pipeline; the extension below adds the customs data and computes it.
+
+---
+
+## Extension: measured import dependence and the vulnerability score
+
+`extension/` replaces the lease-based proxy with official customs data and computes the
+score. Run it after the core pipeline: `python extension/import_dependence_v2.py`.
+Full sources, method and limits are in [`extension/README.md`](extension/README.md).
+
+**Data added.** India's imports and exports by HS code and country, value and quantity,
+FY2024-25 and FY2025-26, from DGCIS via
+[tradestat.commerce.gov.in](https://tradestat.commerce.gov.in/eidb/commodity_wise_all_countries_import)
+(17 HS codes). Domestic manganese ore production of 3.8 Mt in FY2024-25 from the Ministry
+of Mines. China's 95 percent share of battery-grade manganese sulphate (2024) from the
+[US International Trade Commission](https://www.usitc.gov/sites/default/files/publications/332/executive_briefings/ebot_guberman_manganese_for_ev_batteries.pdf).
+
+| Metal | Import dependence, FY2024-25 | India's supplier HHI | Score | Rank |
+|---|---|---|---|---|
+| Cobalt | 100% (548 t unwrought cobalt imported, no domestic mining) | 1,687 | 80.5 | 1 |
+| Nickel | 100% (35,707 t unwrought nickel imported, no domestic mining) | 1,215 | 67.3 | 2 |
+| Manganese | 61.3% (6.01 Mt ore imported against 3.80 Mt mined) | 2,000 | 55.3 | 3 |
+
+- **India imports more manganese ore than it mines**, so even the metal India produces is
+  61 percent import dependent by weight.
+- **India's own supplier list is far less concentrated than world mining.** Cobalt mining
+  HHI is 5,857, but India's import-source HHI is 1,687, because India buys refined products
+  from many refiners and traders. The concentration risk sits upstream.
+- **The ranking is robust.** Moving any weight up or down 10 points, or using the HHI upper
+  bound, never changes the order cobalt, nickel, manganese.
+
+Limits: tonnes are gross weight, not metal content; trading hubs (Singapore, UAE, Hong
+Kong) may understate true origin concentration; cobalt export rows look misclassified and
+are not used; refining shares are leader shares from 2023 and 2024.
 
 ---
 
 ## Limitations
 
-1. **Import dependence is a structural proxy, not a customs calculation.** It is derived
-   from zero active mining leases. It is not imported volume over apparent consumption.
+1. **Import dependence in the core pipeline is a structural proxy, not a customs
+   calculation.** It is derived from zero active mining leases. The extension measures it
+   for manganese (61.3 percent) and confirms nickel and cobalt volumes from customs data.
 2. **HHI is a lower bound for all three minerals.** The Other bucket contributes no term.
    Manganese is affected most, with 27 percent of world output unnamed.
 3. **Refining coverage is partial.** The USGS source lists only countries above 5 percent
    of world processing, so the refining shares are leader shares on an incomplete list and
    no refining HHI can be built. Manganese has no refining figure at all.
-4. **Manganese has no import data in the workbook**, so India's manganese import exposure
-   is unmeasured here. It is flagged as a gap rather than assumed to be zero.
+4. **Manganese has no import data in the workbook**, so the core pipeline flags it as a
+   gap rather than assuming zero. The extension fills it from DGCIS customs data.
 5. **Resource and production data are from different dates.** Resources are as on
    01.04.2020 and production is FY2021-22, so `resource_t_per_t_production` compares a
    2020 stock against a 2022 flow.
@@ -453,7 +492,7 @@ page that is not real data.
 | `DAX_measures.md` | every measure, copy paste ready, with formatting settings |
 | `BUILD_GUIDE.md` | load, model, theme, then a visual by visual spec for five pages |
 | `mockup/report-mockup.html` | the build target shown above |
-| `../docs/Critical_Minerals_PowerBI_Report.pdf` | the same five pages as a PDF, one sheet per page |
+| `../docs/Critical_Minerals_Report_Mockup.pdf` | the mockup's five pages printed to PDF (an HTML mockup, not an export from Power BI) |
 
 ### The model is reshaped, not re-exported
 
@@ -523,7 +562,7 @@ Both dashboards are also exported to PDF, in `docs/`:
 
 | File | What it is |
 |---|---|
-| `Critical_Minerals_PowerBI_Report.pdf` | the five page report, one landscape sheet per page, plus a sources sheet |
+| `Critical_Minerals_Report_Mockup.pdf` | the five page Power BI build target (HTML mockup), one landscape sheet per page, plus a sources sheet |
 | `Critical_Minerals_Dashboard.pdf` | the matplotlib dashboard, A4 portrait |
 
 `build_pdf.py` prints both from the HTML through headless Chrome, so a PDF and its live
@@ -608,7 +647,7 @@ critical-minerals/
   docs/
     dashboard-preview.png                   matplotlib dashboard preview
     powerbi-report-mockup.png               five page Power BI build target
-    Critical_Minerals_PowerBI_Report.pdf    the five page report as PDF
+    Critical_Minerals_Report_Mockup.pdf     the five page report mockup as PDF
     Critical_Minerals_Dashboard.pdf         the matplotlib dashboard as PDF
   powerbi/
     Critical_Minerals_Report.pbit           template, model plus five page report
@@ -621,6 +660,12 @@ critical-minerals/
     data/                                   the 17 tables as CSVs
   sql/
     critical_minerals_analysis.sql          all five queries, comment separated
+  extension/
+    README.md                               sources, method, results and limits
+    import_dependence_v2.py                 measured dependence, supplier HHI, score, sensitivity
+    reference_inputs.csv                    domestic production and refining shares, with sources
+    dgcis_raw/                              customs data as pulled from tradestat
+    outputs_v2/                             five result CSVs
   outputs/
     01_country_production_rank.csv
     02_import_dependence.csv

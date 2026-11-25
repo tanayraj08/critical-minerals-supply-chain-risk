@@ -1,7 +1,7 @@
 """
 Render the two dashboards to PDF.
 
-  docs/Critical_Minerals_PowerBI_Report.pdf   five landscape sheets, one per report page
+  docs/Critical_Minerals_Report_Mockup.pdf   five landscape sheets, one per report page
   docs/Critical_Minerals_Dashboard.pdf        the matplotlib dashboard, portrait
 
 Both are printed from the HTML through headless Chrome, so the PDF and the live
@@ -210,7 +210,7 @@ def build(verbose=True):
         css = css + "\n" + fit_css(heights)
     report = render(
         mockup,
-        os.path.join(DOCS, "Critical_Minerals_PowerBI_Report.pdf"),
+        os.path.join(DOCS, "Critical_Minerals_Report_Mockup.pdf"),
         css,
         landscape=False,
     )

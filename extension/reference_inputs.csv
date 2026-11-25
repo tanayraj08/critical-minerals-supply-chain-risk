@@ -1,0 +1,7 @@
+item,mineral,value,unit,period,source,url,note
+domestic_mine_production,Manganese,3.8,million tonnes of ore,FY2024-25,"Ministry of Mines, provisional data (reported by DD News, 5 May 2025)",https://ddnews.gov.in/en/mining-sector-registers-record-production-in-fy-2024-25/,gross ore tonnes; rounded to one decimal in the source
+domestic_mine_production,Nickel,0,tonnes,as on 01.04.2020,"Ministry of Mines Rajya Sabha reply (PIB, 05-Aug-2024), already in the project workbook",,zero active mining leases
+domestic_mine_production,Cobalt,0,tonnes,as on 01.04.2020,"Ministry of Mines Rajya Sabha reply (PIB, 05-Aug-2024), already in the project workbook",,zero active mining leases
+refining_leader_share,Nickel,56,percent (Indonesia),2023,"USGS Global Maps of Critical Mineral Production in 2023, already in the project workbook",,leader share only; partial list of countries
+refining_leader_share,Cobalt,80,percent (China),2023,"USGS Global Maps of Critical Mineral Production in 2023, already in the project workbook",,leader share only; partial list of countries
+refining_leader_share,Manganese,95,percent (China) of high-purity manganese sulphate (HPMSM),2024,"US International Trade Commission, Executive Briefing on Trade 'Manganese for EV batteries', D. Guberman, September 2025",https://www.usitc.gov/sites/default/files/publications/332/executive_briefings/ebot_guberman_manganese_for_ev_batteries.pdf,battery-grade product; the same briefing puts China at about 93% of manganese metal supply

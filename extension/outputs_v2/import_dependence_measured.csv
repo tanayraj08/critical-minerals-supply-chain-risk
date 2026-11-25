@@ -1,0 +1,7 @@
+mineral,year,basis,domestic_production_t,imports_t,exports_t,apparent_consumption_t,import_dependence_pct,quality,note
+Manganese,FY2024-25,"manganese ore, gross tonnes (HS 2602)",3800000.0,6013306,11030,9802276.0,61.3,measured,"grades differ between imported and Indian ore; gross weight, not Mn content"
+Nickel,FY2024-25,"unwrought nickel, tonnes (HS 75021000)",0.0,35707,897,34810.0,100.0,measured volumes; zero domestic mine supply,"100% because domestic mine production is zero; volumes now measured, not assumed"
+Cobalt,FY2024-25,"unwrought cobalt, tonnes (HS 81052020)",0.0,548,33,515.0,100.0,measured volumes; zero domestic mine supply,"100% because domestic mine production is zero; volumes now measured, not assumed"
+Manganese,FY2025-26,"manganese ore, gross tonnes (HS 2602)",,6250211,186901,,,missing,FY2025-26 domestic production not collected
+Nickel,FY2025-26,"unwrought nickel, tonnes (HS 75021000)",0.0,36687,292,36395.0,100.0,measured volumes; zero domestic mine supply,"100% because domestic mine production is zero; volumes now measured, not assumed"
+Cobalt,FY2025-26,"unwrought cobalt, tonnes (HS 81052020)",0.0,635,433,203.0,100.0,measured volumes; zero domestic mine supply,"100% because domestic mine production is zero; volumes now measured, not assumed"
